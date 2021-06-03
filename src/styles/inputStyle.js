@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core/styles'
 const useStyles =makeStyles(()=>({
     Form:{
         marginTop: '20%',
+        marginBottom:'50%',
         display: 'flex',
         flexDirection:'column',
         alignItems:'center',
@@ -10,6 +11,8 @@ const useStyles =makeStyles(()=>({
     },
     Input:{
         width:'70%',
+        maxWidth:'550px',
+        
         padding:'10px',
         borderColor:'#f2f2f2',
         backgroundColor:'#f2f2f2',
@@ -19,6 +22,8 @@ const useStyles =makeStyles(()=>({
     },
     Textarea:{
         width:'70%',
+        height:'250px',
+        maxWidth:'500px',
         padding:'10px',
         marginTop: '10px',
         resize: 'none',

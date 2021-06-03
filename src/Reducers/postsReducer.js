@@ -20,6 +20,11 @@ const postsReducer = (state = initState, action)=>{
 				post: {},
 				error: '500!'
 			}	
+		case 'FILTERED':
+			return {
+				...state,
+				post: action.payload
+			}	
 		default:
 			return state    
     }

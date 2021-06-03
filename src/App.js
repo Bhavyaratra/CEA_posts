@@ -4,6 +4,7 @@ import Allposts from './components/Allposts';
 import Dislikedposts from './components/Dislikedposts'
 import Likedposts from './components/Likedposts'
 import Editposts from './components/Editposts'
+import './App.css'
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
 function App() {
   return (

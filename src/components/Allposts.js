@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import useStyles from '../styles/allpostsStyle'
 import { useHistory } from 'react-router-dom';
+import Searchbar from './Searchbar';
 
 function Allposts(){
     const classes =useStyles();
@@ -99,13 +100,16 @@ function Allposts(){
      
 
     return(
+     
         <div className={classes.postContainer}>
+            <Searchbar/>
            {posts.loading ? 
            'Loading...'
                 :
             <Allposts/>  
            }
         </div>
+        
     )
 }
 

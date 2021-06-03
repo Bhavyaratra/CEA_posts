@@ -4,11 +4,16 @@ const useStyles = makeStyles((theme) => ({
     postContainer:{
         marginTop:'20px',
         padding:'25px',
-        color:'white'
+        color:'white',
+        maxWidth:'500px',
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems:'center'
     },
     paper:{
         padding:'10px',
-        marginBottom:'10px',
+        marginTop:'10px',
         background:'#212332',
         color: '#dee3ea',
         '&:hover':{
