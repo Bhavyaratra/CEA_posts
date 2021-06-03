@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop:'10px',
         background:'#212332',
         color: '#dee3ea',
+        transition: 'transform .2s',
         '&:hover':{
             transform: 'scale(1.01)' 
         }

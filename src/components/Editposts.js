@@ -74,7 +74,7 @@ function Create(){
         <br/>
         <input className={classes.Btn}
             type='submit'
-            value="post"
+            value="save"
             
         />
 

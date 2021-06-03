@@ -15,6 +15,7 @@ function Allposts(){
     const posts = useSelector(state=>state.posts);
     const likes = useSelector(state=>state.likes);
     const dislikes = useSelector(state=>state.dislikes);
+    const temp = useSelector(state=>state.posts.temp);
 
     const dispatch = useDispatch();
     useEffect(()=>{
@@ -81,7 +82,7 @@ function Allposts(){
     const Allposts=()=>{
         return(
             <div>
-             {posts.post.map((p)=>(
+             {temp.map((p)=>(
                 <Paper elevation={0} className={classes.paper} id={p.id}>
                     <p>{p.id}</p>
                     <h4>{p.title}</h4>

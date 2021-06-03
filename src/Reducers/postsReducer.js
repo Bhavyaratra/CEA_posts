@@ -2,7 +2,8 @@
 const initState={
     loading: true,
 	error: '',
-	post: {}
+	post: {},
+	temp: {},
 }
 
 //defining action types
@@ -12,6 +13,7 @@ const postsReducer = (state = initState, action)=>{
 			return {
 				loading: false,
 				post: action.payload,
+				temp: action.payload,
 				error: ''
 			}
 		case 'FETCH_ERROR':
@@ -23,7 +25,7 @@ const postsReducer = (state = initState, action)=>{
 		case 'FILTERED':
 			return {
 				...state,
-				post: action.payload
+				temp: action.payload
 			}	
 		default:
 			return state    
